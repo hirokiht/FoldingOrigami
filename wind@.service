@@ -1,0 +1,8 @@
+[Unit]
+Description = Wind Sound %I
+
+[Service]
+ExecStart = /home/pi/FoldingCubeV2/cube /home/pi/wind.wav /dev/%I 180
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+[Unit]
+Description = Ocean Sound %I
+
+[Service]
+ExecStart = /home/pi/FoldingCubeV2/cube /home/pi/ocean.wav /dev/%I 0
+
+[Install]
+WantedBy=multi-user.target

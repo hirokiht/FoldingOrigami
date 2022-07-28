@@ -1,5 +1,0 @@
-[Unit]
-Description = Cube Sound %I
-
-[Service]
-ExecStart = /home/pi/FoldingCubeV2/cube /home/pi/wave.wav /dev/%I

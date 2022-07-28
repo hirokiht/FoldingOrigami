@@ -1,0 +1,8 @@
+[Unit]
+Description = Forest Sound %I
+
+[Service]
+ExecStart = /home/pi/FoldingCubeV2/cube /home/pi/forest.wav /dev/%I 90
+
+[Install]
+WantedBy=multi-user.target

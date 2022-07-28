@@ -1,5 +1,6 @@
 #pragma once
 #include <AL/al.h>
+#include <cstdint>
 #include <string_view>
 
 class AudioBuffer

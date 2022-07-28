@@ -29,7 +29,7 @@ Serial::Serial(const char * tty, unsigned baudrate) {
     config.c_lflag &= ~(ECHO | ECHONL | ICANON | IEXTEN | ISIG);
     config.c_cflag &= ~(CSIZE | PARENB);
 	config.c_cflag |= CS8;
-    cfsetspeed(&config, baudrate);
+	cfsetspeed(&config, baudrate);
 	config.c_cc[VMIN]  = 1;
 	config.c_cc[VTIME] = 0;
 	if(tcsetattr(fd, TCSAFLUSH, &config) < 0)
